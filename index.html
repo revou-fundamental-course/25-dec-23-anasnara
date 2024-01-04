@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+<body>
+    <script src="./js/index.js"</script></script>
+    <header id="navigation-bar">
+        <h3 id="logo">Katik</h3>
+        <nav class="navigation">
+           <div class="box"><a href="">Kalkulator Luas Segitiga</a></div>
+        </nav>
+    </header>
+    <style>
+        .garis_tepi {
+            border: 2px solid red;
+        }
+    </style>
+    <center><p class="garis_tepi">Sebuah web apps sederhana yang bertujuan menyelesaikan project dari mini course Fundamental Course revou.id</p></center>
+    <center><p>Gambar Rumus Segitiga</p>
+    <img src="data:image/jpeg;base64,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" style="width: 250px; height: 180px;">
+    </center>
+    <p> Rumus Luas Segitiga Yaitu :</p>
+    <br />
+    <center><a>Luas Segitiga = 1/2 x alas x tinggi</a></center>
+    <br />
+    <center><h2>Hitung Luas Segitiga</h2></center>
+        </style>
+    <section class="input-luas-section">
+        <label for="" id="label-tinggi">Tinggi</label>
+        <input type="number" id="input-tinggi" class="katik-input" placeholder="Masukkan Nilai Tinggi">
+        <br />
+        <label for="" id="label-alas">Alas</label>
+        <input type="number" id="input-alas" class="katik-input" placeholder="Masukkan Nilai Alas">
+        <br />
+        <label for="" id="label-Luas">Luas Segitigas</label>
+        <input type="number" id="Luas1" class="katik-input" placeholder="Hasil" disabled>
+        <div class="button">
+        <div class="button">
+            <button onclick="Hasil()">Hitung</button>
+            <button onclick="Reset()" id="Reset" value="Reset">Reset</button>
+        </div>
+    </section>
+    </body>
+</html>
